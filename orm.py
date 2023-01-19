@@ -35,6 +35,7 @@ session = Session()
 #session.dirty
 #session.commit()
 
+#    Deletando objetos(DELETE)
 user = session.query(User).filter_by(name='Alexia').first()
 session.delete(user)
 session.commit()
